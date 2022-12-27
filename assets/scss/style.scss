@@ -26,6 +26,7 @@
         flex-direction: column;
         justify-content: center;
         transition: background .3s, color .3s;
+        cursor: pointer;
 
         &:hover{
             background: #1A75E8;
@@ -52,6 +53,40 @@
         text-align: center;
         text-decoration: none;
         color: #111238;
+    }
+}
+.subs{
+    margin: 40px auto 90px;
+    
+    .row{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .text_input{
+
+        h3{
+            font-family: 'Fira Sans';
+            font-weight: 900;
+            font-size: 36px;
+            text-align: center;
+            color: #111238;
+        }
+        p{
+            font-family: 'Fira Sans';
+            font-weight: 400;
+            font-size: 18px;
+            text-align: center;
+            color: #111238;
+        }
+    }
+    button{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        p{
+            margin: 0;
+        }
     }
 }
 .footer{
