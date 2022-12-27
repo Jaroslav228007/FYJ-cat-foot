@@ -4,86 +4,100 @@
     margin: 0;
 }
 // header
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
 nav {
 
-    .container {
-        font-family: 'Fira Sans';
+  .container {
+      font-family: 'Fira Sans';
 
-        .logo {
-            display: flex;
-            color: #000;
-            align-items: center;
-            margin-right: 261px;
-            font-weight: 600;
-            gap: 11px;
+      .logo {
 
-            @media (max-width: 768px) {
-                margin-right: 0;
-            }
+          display: flex;
+          color: #000;
+          align-items: center;
+          margin-right: 261px;
+          font-weight: 600;
+          gap: 11px;
 
-            @media (width: 1024px) {
-                margin-right: 168.5px;
-            }
+          @media (max-width: 768px) {
+              margin-right: 0;
+          }
 
-            @media (width: 1440px) {
-                margin-right: 351px;
-            }
+          @media (width: 1024px) {
+              margin-right: 168.5px;
+          }
 
-                .logo_text {
-                    display: flex;
-                    gap: 0;
+          @media (width: 1440px) {
+              margin-right: 351px;
+          }
 
-                    .job {
-                        color:#1A75E8;
-                    }
-                }
-            }
+              .logo_text {
 
-        .menu_list {
-            display: flex;
-            padding: 0;
-            margin-right: 261px;
-            margin-bottom: 0;
-            gap: 20px;
+                  display: flex;
+                  gap: 0;
 
-            @media (max-width: 768px) {
-                margin-right: 0;
-            }
+                  .job {
+                      color:#1A75E8;
+                  }
+              }
+          }
 
-            @media (width: 1024px) {
-                margin-right: 168.5px;
-            }
+      .menu_list {
 
-            @media (width: 1440px) {
-                margin-right: 351px;
-            }
+          display: flex;
+          padding: 0;
+          margin-right: 261px;
+          margin-bottom: 0;
+          gap: 20px;
 
-            li {
-                display: inline-block;          
-            }
-        }
-    }
-        .email {
-            display: flex;
-            gap: 60px;
+          @media (max-width: 768px) {
+              margin-right: 0;
+          }
 
-            a {
-                padding-top: 15px;
-                padding-bottom: 15px;
-            }
+          @media (width: 1024px) {
+              margin-right: 168.5px;
+          }
 
-            .registration {
-                color: white;
-                text-align: center;
-                background: #1A75E8;
-                padding-top: 15px;
-                padding-bottom: 15px;
-                border-radius: 5px;
-                padding-left: 30px;
-                padding-right: 30px;
-            }
-        }  
-    }
+          @media (width: 1440px) {
+              margin-right: 351px;
+          }
+
+          li {
+              display: inline-block;          
+          }
+      }
+  }
+
+  .email {
+
+      display: flex;
+      gap: 60px;
+
+      a {
+          padding-top: 15px;
+          padding-bottom: 15px;
+      }
+
+      .registration {
+          
+          color: white;
+          text-align: center;
+          background: #1A75E8;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          border-radius: 5px;
+          padding-left: 30px;
+          padding-right: 30px;
+      }
+  }  
+}
 // category
 .category{
     margin: 80px auto 80px;
@@ -111,7 +125,7 @@ nav {
 
         &:hover{
             background: #1A75E8;
-            width: 128px;
+            width: calc( (100% / 6) - (332px / 6));
 
             path{
                 fill: #fff;
